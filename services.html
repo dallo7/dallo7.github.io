@@ -87,42 +87,85 @@
                          aria-multiselectable="true">
 
                         <div class="card">
-                            <div class="card-header p-0" id="headingThree" role="tab">
+                            <div class="card-header p-0" id="headingOne" role="tab">
                                 <h2 class="mb-0">
-                                    <button href="#collapseThree"
+                                    <button href="#collapseOne"
                                             class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
                                             data-parent="#accordion"
                                             data-toggle="collapse"
-                                            aria-expanded="false"
-                                            aria-controls="collapseTwo">
+                                            aria-expanded="true"
+                                            aria-controls="collapseOne">
                                         <p class="mb-0" style="color: black;">
-                                            How can i reduce baisness, increase trust while at the same time improve the accuracy of ML models in production?
+                                            Text summarization and NER can be used to improve customer support by providing agents with a quick and easy way to understand the key information in customer tickets and support requests.
+                                            This can help agents to resolve issues more quickly and efficiently and improve the overall customer experience.
                                         </p>
                                         <i class="fa" aria-hidden="true"></i>
                                     </button>
                                 </h2>
                             </div>
-                            <div class="collapse"
-                                 id="collapseThree"
+                            <div class="collapse show"
+                                 id="collapseOne"
                                  role="tabpanel"
-                                 aria-labelledby="headingTwo">
+                                 aria-labelledby="headingOne">
                                 <div class="card-body py-3 px-0">
                                     <ol>
                                         <li>
-                                            Assume you are a doctor operating in an urban set up where you are required to review a considerable number of patients daily.
-                                            You employ a ML tool to assist with diagnosing the patients.
-                                            In the process you are not sure about the criteria the model is using to make the diagnosis.
-                                            You are more concerned about the accuracy of the model and whether it is biased in any way.
-                                            To reduce the risk of Misdiagnosis and better understand the model predictions in order to improve trust in the ML tool, model explainabilty feature is integrated.
-                                            Giving the Doctor the insights as to why the model arrived at a particular diagnosis.
+                                            A customer support agent at an e-commerce company could use text summarization to generate a summary of a customer ticket that describes a problem with an order.
+                                            The agent could then use NER to identify the key entities in the summary, such as the customer's name, order number, and the product they are having problems with.
+                                            This information would allow the agent to quickly understand the issue and provide the customer with a resolution.
                                         </li>
                                         <li>Play with the tool here! 🔛 (The VMs hosting the application takes about a minute to start up on inital inference)</li>
+                                        <li><a href="https://ner-summary-headline.onrender.com/" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;">https://ner-summary-headline.onrender.com/</a><p>(NER Summerizer and Headline)</p></li>
+                                        <li>Read about it here! 🔛 This tool was built using Spacy and a Flan & Bart LLM models.</li>
+                                        <li><a href="https://medium.com/@cwakhusama/spacy-for-named-entity-recognition-and-llms-for-text-summarization-and-headline-generation-74f35b15b35e" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;">https://medium.com/@cwakhusama/spacy-for-named-entity-recognition-and-llms-for-text-summarization-and-headline-generation-74f35b15b35e</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header p-0" id="headingOne" role="tab">
+                                <h2 class="mb-0">
+                                    <button href="#collapseOne"
+                                            class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                                            data-parent="#accordion"
+                                            data-toggle="collapse"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        <p class="mb-0" style="color: black;">
+                                            Diagnostic decisions made by AI models in healthcare often lack transparency, raising concerns about their reliability and potential bias.
+                                            Explainable AI (XAI) can offer valuable insights into the reasoning behind these decisions, improving trust and accountability in the medical field.
+                                        </p>
+                                        <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="collapse show"
+                                 id="collapseOne"
+                                 role="tabpanel"
+                                 aria-labelledby="headingOne">
+                                <div class="card-body py-3 px-0">
+                                    <ol>
                                         <li>
-                                            <a href="https://pragnosisexplainer.onrender.com/" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;"> https://pragnosisexplainer.onrender.com/  </a>
+<pre>
+Challenges of existing models.
+❎Black-box nature of AI models. The complex internal workings of AI models make it difficult for doctors to understand how they arrive at their diagnoses.
+❎Potential for bias and errors. AI models can inherit biases from their training data, leading to inaccurate diagnoses for certain patient populations.
+❎Need for interpretability and explainabilty. To trust AI models in critical medical decisions, doctors need clear and concise explanations for their predictions.
+
+Main advantage of XAI Solution.
+▶️Feature importance analysis. XAI can identify the specific features in the patient's data that most influenced the model's prediction, providing valuable insights for medical professionals.
+▶️Improves the medics knowledge for matching symptoms to correct diagnosis.
+
+Benefits.
+☑️Improved trust and transparency. XAI helps doctors understand the reasoning behind AI models, fostering trust in their predictions.
+☑️Enables model to be audited by the Dr. on all the inferences made.
+☑️Enhanced decision-making. By understanding the factors contributing to a diagnosis, doctors can make more informed and personalized treatment decisions.
+☑️Reduced misdiagnosis. Models are trained with expert data and transfers learning to the user (medical practitioner)
+</pre>
                                         </li>
-                                        <li>Read about it here! 🔛</li>
-                                        <li><a href="https://medium.com/@cwakhusama/model-explainabilty-xai-5e4b11822619" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;"> https://medium.com/@cwakhusama/model-explainabilty-xai-5e4b11822619 </a> </li>
-                                        <li></li>
+                                        <li>Play with the tool here! 🔛 (The VMs hosting the application takes about a minute to start up on inital inference)</li>
+                                        <li><a href="https://dem-8wfi.onrender.com/" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;">https://dem-8wfi.onrender.com/</a><p>(DEM.V2 => Demp)</p></li>
                                     </ol>
                                 </div>
                             </div>
@@ -202,39 +245,43 @@
                             </div>
                         </div>
 
-
                         <div class="card">
-                            <div class="card-header p-0" id="headingOne" role="tab">
+                            <div class="card-header p-0" id="headingThree" role="tab">
                                 <h2 class="mb-0">
-                                    <button href="#collapseOne"
+                                    <button href="#collapseThree"
                                             class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
                                             data-parent="#accordion"
                                             data-toggle="collapse"
-                                            aria-expanded="true"
-                                            aria-controls="collapseOne">
+                                            aria-expanded="false"
+                                            aria-controls="collapseTwo">
                                         <p class="mb-0" style="color: black;">
-                                            Text summarization and NER can be used to improve customer support by providing agents with a quick and easy way to understand the key information in customer tickets and support requests.
-                                            This can help agents to resolve issues more quickly and efficiently and improve the overall customer experience.
+                                            How can i reduce baisness, increase trust while at the same time improve the accuracy of ML models in production?
                                         </p>
                                         <i class="fa" aria-hidden="true"></i>
                                     </button>
                                 </h2>
                             </div>
-                            <div class="collapse show"
-                                 id="collapseOne"
+                            <div class="collapse"
+                                 id="collapseThree"
                                  role="tabpanel"
-                                 aria-labelledby="headingOne">
+                                 aria-labelledby="headingTwo">
                                 <div class="card-body py-3 px-0">
                                     <ol>
                                         <li>
-                                            A customer support agent at an e-commerce company could use text summarization to generate a summary of a customer ticket that describes a problem with an order.
-                                            The agent could then use NER to identify the key entities in the summary, such as the customer's name, order number, and the product they are having problems with.
-                                            This information would allow the agent to quickly understand the issue and provide the customer with a resolution.
+                                            Assume you are a doctor operating in an urban set up where you are required to review a considerable number of patients daily.
+                                            You employ a ML tool to assist with diagnosing the patients.
+                                            In the process you are not sure about the criteria the model is using to make the diagnosis.
+                                            You are more concerned about the accuracy of the model and whether it is biased in any way.
+                                            To reduce the risk of Misdiagnosis and better understand the model predictions in order to improve trust in the ML tool, model explainabilty feature is integrated.
+                                            Giving the Doctor the insights as to why the model arrived at a particular diagnosis.
                                         </li>
                                         <li>Play with the tool here! 🔛 (The VMs hosting the application takes about a minute to start up on inital inference)</li>
-                                        <li><a href="https://ner-summary-headline.onrender.com/" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;">https://ner-summary-headline.onrender.com/</a><p>(NER Summerizer and Headline)</p></li>
-                                        <li>Read about it here! 🔛 This tool was built using Spacy and a Flan & Bart LLM models.</li>
-                                        <li><a href="https://medium.com/@cwakhusama/spacy-for-named-entity-recognition-and-llms-for-text-summarization-and-headline-generation-74f35b15b35e" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;">https://medium.com/@cwakhusama/spacy-for-named-entity-recognition-and-llms-for-text-summarization-and-headline-generation-74f35b15b35e</a></li>
+                                        <li>
+                                            <a href="https://pragnosisexplainer.onrender.com/" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;"> https://pragnosisexplainer.onrender.com/  </a>
+                                        </li>
+                                        <li>Read about it here! 🔛</li>
+                                        <li><a href="https://medium.com/@cwakhusama/model-explainabilty-xai-5e4b11822619" target="_blank" style="text-decoration: underline; text-decoration-color: blue; text-decoration-thickness: 3px; color: purple;"> https://medium.com/@cwakhusama/model-explainabilty-xai-5e4b11822619 </a> </li>
+                                        <li></li>
                                     </ol>
                                 </div>
                             </div>
